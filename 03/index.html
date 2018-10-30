@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Banderas</title>
+    <style>
+      *{
+        box-sizing: border-box
+      }
+      .bandera{border: 1px solid lightgrey!important; width: 200px; position:relative;}
+
+
+
+      .espRoja{
+        background: red;
+        height: 25px;
+      }
+      .espAmarilla{
+        background: yellow;
+        height:50px
+      }
+
+      .din1{height: 40px}
+      .din2{height: 10px; background: white}
+      .din3{height: 50px}
+      .din1, .din3 {background: red}
+      div .dinaBlanco{
+        background: white;
+        position: relative;
+        width: 10px;
+        left: 40px;
+        z-index:1; 
+        height: inherit
+      }
+
+      .emirates{
+        width: 200px;
+        position: relative;
+        border: 1px solid lightgrey
+      }
+      .emirates .rojo{background: red; height:99px; width:40px; z-index:2; position: absolute;}
+      .emirates div{ height: 33px; z-index: 1 }
+      .emirates .verde{background: darkgreen;}
+      .emirates .negro{background: black}
+
+      #japon{
+        background: red;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        margin: 30px auto
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Banderas</h1>
+
+    <h2>España</h2>
+    <div class="bandera">
+      <div class="espRoja"></div>
+      <div class="espAmarilla"></div>
+      <div class="espRoja"></div>
+    </div>
+
+    <h2>Dinamarca</h2>
+    <div class="bandera">
+      <div class="din1"><div class="dinaBlanco"></div></div>
+      <div class="din2"></div>
+      <div class="din3"><div class="dinaBlanco"></div></div>
+    </div>
+
+    <h2>Emiratos Árabe</h2>
+
+    <div class="emirates">
+      <div class="rojo"></div>
+      <div class="verde"></div>
+      <div></div>
+      <div class="negro"></div>
+    </div>
+
+    <h2>Japón</h2>
+
+    <div class="bandera">
+      <div id="japon"></div>
+    </div>
+
+  </body>
+</html>
