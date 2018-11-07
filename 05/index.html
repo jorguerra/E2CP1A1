@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="./ribbon.css">
+  <style>
+    .box{
+      width: 250px;
+      border: 1px solid lightgrey;
+      text-align: center;
+      color:#333
+    }
+    .box img{
+      max-width: 250px;
+    }
+    .box .ribbon {
+      transform: rotate(-45deg);
+      max-width: 5%;
+    }
+
+    .box .ribbon .ribbon-stitches-top, .box .ribbon .ribbon-stitches-bottom{
+      max-height: 10px
+    }
+
+    .box .ribbon h1{
+      font-size: 15px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="ribbon"><div class="ribbon-stitches-top"></div>
+      <strong class="ribbon-content"><h1>OFERTA</h1></strong>
+      <div class="ribbon-stitches-bottom"></div>
+    </div>
+    <img src="http://placekitten.com/g/250/300" alt="imagen">
+    Gato de raza $500.000
+  </div>
+</body>
+
+</html>
