@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  
+  <style>
+    body{
+      background: url('./../images/awwwards_b_right.png') no-repeat fixed;
+      background-position: 100% 0 ;
+    }
+    .producto{
+      position: relative;
+      width: fit-content
+    }
+
+    .producto img{
+      z-index: 0;
+    }
+
+    .producto > .ribbon{
+      position: absolute;
+      bottom: 60px;
+      right: 30px;
+      z-index: 1;
+      max-width: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="producto">
+    <img src="../images/oferta_lente.jpg" alt="Lente">
+    <img src="../images/despacho.png" alt="oferta" class="ribbon">
+  </div>
+  
+</body>
+
+</html>
